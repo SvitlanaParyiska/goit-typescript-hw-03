@@ -13,12 +13,11 @@ class Person {
 }
 
 abstract class House {
-  protected door: true | false;
+  protected door: boolean = false;
   protected key: Key;
   protected tenants: Person[] = [];
 
   constructor(key: Key) {
-    this.door = false;
     this.key = key;
   }
 
